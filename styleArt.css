@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #bfefed;
+  color: #1d170f;
+}
+header {
+  width: 100%;
+  text-align: center;
+}
+main {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+img {
+  width: 80%;
+  box-shadow: 5.9px 4.7px 5.3px -12px rgba(0, 0, 0, 0.101),
+    13.6px 10.8px 12.8px -12px rgba(0, 0, 0, 0.152),
+    23.6px 18.6px 24px -12px rgba(0, 0, 0, 0.196),
+    36.9px 29.2px 42.9px -12px rgba(0, 0, 0, 0.239),
+    56.4px 44.6px 80.2px -12px rgba(0, 0, 0, 0.289),
+    100px 79px 192px -12px rgba(0, 0, 0, 0.39);
+  border-radius: 15px;
+  margin: 20px;
+}
+h2 {
+  font-family: "Fjalla One", sans-serif;
+  margin: 15px;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  text-align: center;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+.redes-contacto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.redes-contacto > a > i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.redes-contacto > a > i:hover {
+  scale: 1.1;
+}
+/* Estilos para pantallas pequeñas (menos de 600px) */
+@media (max-width: 599px) {
+  main {
+    width: 99%;
+    height: 70vh;
+    justify-content: space-evenly;
+  }
+  img {
+    width: 90%;
+  }
+}

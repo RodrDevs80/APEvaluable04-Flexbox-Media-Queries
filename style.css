@@ -1,0 +1,131 @@
+/*reset de estilos*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header {
+  padding: 20px;
+  background-color: #7db5e5;
+}
+.titulo {
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  color: #a073ff;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+}
+.container {
+  /* Estilos base para todos los tamaños de pantalla */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.info {
+  font-size: small;
+  text-align: center;
+  background-color: #20b5d8;
+  padding: 10px;
+}
+.tarjeta {
+  width: 30%;
+}
+img {
+  transition: all 2s linear;
+}
+img:hover {
+  scale: 1.1;
+}
+.tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #f8efed;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.titulo-tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container > article > a > img {
+  width: 100%;
+}
+/* Estilos para pantallas pequeñas (menos de 600px) */
+@media (max-width: 599px) {
+  .container {
+    gap: 20px;
+  }
+  .tarjeta {
+    width: 100%;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 600px y 900px) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tarjeta {
+    width: 48%;
+  }
+}
+
+/* Estilos para pantallas grandes (más de 900px) */
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tarjeta {
+    width: 32%;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
+  background-color: #7db5e5;
+  text-align: center;
+}
+.redes-contacto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.redes-contacto > a > i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.redes-contacto > a > i:hover {
+  scale: 1.1;
+}
